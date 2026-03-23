@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Camera, MapPin, Facebook } from 'lucide-react';
+import { Instagram, MapPin, Facebook, Twitter, Pin } from 'lucide-react';
 import { JULLY_ART_DATA } from '../constants';
 
 export const Footer = () => {
@@ -16,11 +16,17 @@ export const Footer = () => {
               {JULLY_ART_DATA.description}
             </p>
             <div className="flex gap-4">
-              <a href="https://www.instagram.com/jullsart/" target="_blank" className="p-2 rounded-full border border-inverted/10 hover:bg-inverted hover:text-primary transition-all">
+              <a href={JULLY_ART_DATA.socials.instagram} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full border border-inverted/10 hover:bg-inverted hover:text-primary transition-all" aria-label="Instagram">
                 <Instagram className="size-5" />
               </a>
-              <a href="https://www.facebook.com/profile.php?id=100063264818347" target="_blank" className="p-2 rounded-full border border-inverted/10 hover:bg-inverted hover:text-primary transition-all">
+              <a href={JULLY_ART_DATA.socials.facebook} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full border border-inverted/10 hover:bg-inverted hover:text-primary transition-all" aria-label="Facebook">
                 <Facebook className="size-5" />
+              </a>
+              <a href={JULLY_ART_DATA.socials.pinterest} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full border border-inverted/10 hover:bg-inverted hover:text-primary transition-all" aria-label="Pinterest">
+                <Pin className="size-5" />
+              </a>
+              <a href={JULLY_ART_DATA.socials.twitter} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full border border-inverted/10 hover:bg-inverted hover:text-primary transition-all" aria-label="Twitter">
+                <Twitter className="size-5" />
               </a>
             </div>
           </div>
