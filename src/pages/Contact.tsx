@@ -93,8 +93,8 @@ export const Contact = () => {
                   <label className="text-xs font-mono text-secondary uppercase tracking-widest">Съобщение</label>
                   <textarea rows={5} className="w-full bg-inverted/5 border border-inverted/10 rounded-xl px-4 py-3 outline-none focus:border-inverted/30 transition-all" placeholder="Разкажете ни за вашата мечта..." />
                 </div>
-                <button className="w-full py-4 rounded-full bg-inverted text-primary font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2">
-                  Изпрати запитване <Send className="size-4" />
+                <button aria-label="Изпрати запитване за събитие" className="w-full py-4 rounded-full bg-inverted text-primary font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2">
+                  Изпрати запитване <Send className="size-4" aria-hidden="true" />
                 </button>
               </form>
             </motion.div>

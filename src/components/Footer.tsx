@@ -9,8 +9,8 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
           <div className="col-span-1 md:col-span-2 space-y-6">
-            <Link to="/">
-              <img src="https://www.jullyart.com/common/logo2.png" alt="Jully Art" className="h-12 w-auto brightness-0 invert" />
+            <Link to="/" aria-label="Jully Art Начало">
+              <img src="https://www.jullyart.com/common/logo2.png" alt="Jully Art Logo" className="h-12 w-auto brightness-0" />
             </Link>
             <p className="text-secondary max-w-sm leading-relaxed text-sm">
               {JULLY_ART_DATA.description}

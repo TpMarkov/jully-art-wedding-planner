@@ -6,9 +6,9 @@
   --font-serif: "Playfair Display", serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  --color-primary: #0D0D0D;
-  --color-secondary: #8E9299;
-  --color-inverted: #FFFFFF;
+  --color-primary: #FFFFFF;
+  --color-secondary: #4B5563;
+  --color-inverted: #0D0D0D;
   
   --animate-blur-up: blur-up 0.75s ease-out forwards;
 }
@@ -27,8 +27,8 @@
 }
 
 :root {
-  --background: #0D0D0D;
-  --foreground: #FFFFFF;
+  --background: #FFFFFF;
+  --foreground: #0D0D0D;
 }
 
 body {
@@ -52,9 +52,9 @@ body {
 }
 
 .glass-morphism {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.03);
   backdrop-filter: blur(32px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .no-scrollbar::-webkit-scrollbar {

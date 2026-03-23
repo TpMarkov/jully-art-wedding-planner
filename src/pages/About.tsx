@@ -33,7 +33,7 @@ export const About = () => {
               
               <div className="mt-12 pt-12 border-t border-inverted/10">
                 <div className="flex items-center gap-6">
-                  <div className="size-20 rounded-full overflow-hidden grayscale">
+                  <div className="size-20 rounded-full overflow-hidden">
                     <img src="https://www.jullyart.com/common/introimg.jpg" alt={JULLY_ART_DATA.owner} className="w-full h-full object-cover" />
                   </div>
                   <div>

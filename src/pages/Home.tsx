@@ -12,11 +12,11 @@ export const Home = () => {
         <div className="absolute inset-0 z-0">
           <img 
             src="https://www.jullyart.com/common/hero-img.jpg" 
-            alt="Hero" 
-            className="w-full h-full object-cover opacity-40"
+            alt="Hero Background" 
+            className="w-full h-full object-cover opacity-60"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-primary/60 to-primary" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-primary/30 to-primary" />
         </div>
 
         <div className="relative z-10 text-center max-w-4xl">
@@ -35,10 +35,10 @@ export const Home = () => {
               {JULLY_ART_DATA.description}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/kontakti" className="w-full sm:w-auto px-10 py-4 rounded-full bg-inverted text-primary font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2 group">
-                Започнете планирането <ArrowRight className="size-4 group-hover:translate-x-1 transition-transform" />
+              <Link to="/kontakti" aria-label="Започнете планирането - Безплатна консултация" className="w-full sm:w-auto px-10 py-4 rounded-full bg-inverted text-primary font-medium hover:opacity-90 transition-all flex items-center justify-center gap-2 group">
+                Започнете планирането <ArrowRight className="size-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
               </Link>
-              <Link to="/galeriq" className="w-full sm:w-auto px-10 py-4 rounded-full border border-inverted/20 font-medium hover:bg-inverted/5 transition-all">
+              <Link to="/galeriq" aria-label="Вижте галерията с наши проекти" className="w-full sm:w-auto px-10 py-4 rounded-full border border-inverted/20 font-medium hover:bg-inverted/5 transition-all">
                 Вижте галерията
               </Link>
             </div>
@@ -112,9 +112,9 @@ export const Home = () => {
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-serif italic mb-2">{service.title}</h3>
+                  <h3 className="text-xl font-serif italic mb-2 text-inverted">{service.title}</h3>
                   <p className="text-xs text-secondary leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500 line-clamp-2">
                     {service.description}
                   </p>

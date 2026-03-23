@@ -49,12 +49,12 @@ export const Services = () => {
                     <ChevronRight className="size-4 text-inverted" /> Креативни решения и уникален дизайн
                   </li>
                 </ul>
-                <button className="mt-8 px-8 py-3 rounded-full border border-inverted/20 hover:bg-inverted hover:text-primary transition-all">
+                <button aria-label={`Запитване за услуга ${service.title}`} className="mt-8 px-8 py-3 rounded-full border border-inverted/20 hover:bg-inverted hover:text-primary transition-all">
                   Запитване за услуга
                 </button>
               </div>
               <div className="flex-1 w-full">
-                <div className="aspect-video lg:aspect-square rounded-3xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                <div className="aspect-video lg:aspect-square rounded-3xl overflow-hidden transition-all duration-700">
                   <img src={service.image} alt={service.title} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                 </div>
               </div>

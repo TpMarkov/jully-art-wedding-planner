@@ -36,8 +36,8 @@ export const Navbar = () => {
     )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-12">
-          <Link to="/" className="flex items-center gap-3">
-            <img src="https://www.jullyart.com/common/logo2.png" alt="Jully Art" className="h-10 w-auto brightness-0 invert" />
+          <Link to="/" className="flex items-center gap-3" aria-label="Jully Art Начало">
+            <img src="https://www.jullyart.com/common/logo2.png" alt="Jully Art Logo" className="h-10 w-auto brightness-0" />
           </Link>
           <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-secondary">
             {navLinks.map((link) => (
@@ -62,8 +62,10 @@ export const Navbar = () => {
           <button 
             className="lg:hidden p-2 text-inverted"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "Затвори меню" : "Отвори меню"}
+            aria-expanded={mobileMenuOpen}
           >
-            {mobileMenuOpen ? <X /> : <Menu />}
+            {mobileMenuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
           </button>
         </div>
       </div>
