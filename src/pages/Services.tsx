@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { JULLY_ART_DATA } from '../constants';
 import { ChevronRight, Plus, Minus, Check, Crown, Gem, Send, Star, Camera, Utensils } from 'lucide-react';
@@ -150,9 +151,13 @@ export const Services = () => {
                     <Check className="size-4 text-inverted" /> Креативни решения и уникален дизайн
                   </li>
                 </ul>
-                <button aria-label={`Запитване за услуга ${service.title}`} className="mt-8 px-8 py-3 rounded-full border border-inverted/20 hover:bg-inverted hover:text-primary transition-all">
+                <Link 
+                  to="/kontakti" 
+                  aria-label={`Запитване за услуга ${service.title}`} 
+                  className="mt-8 inline-block px-8 py-3 rounded-full border border-inverted/20 hover:bg-inverted hover:text-primary transition-all"
+                >
                   Запитване за услуга
-                </button>
+                </Link>
               </div>
               <div className="flex-1 w-full">
                 <div className="aspect-video lg:aspect-square rounded-3xl overflow-hidden shadow-2xl">
