@@ -59,8 +59,8 @@ export const Footer = () => {
             © 2026 {JULLY_ART_DATA.name.toUpperCase()}. ВСИЧКИ ПРАВА ЗАПАЗЕНИ.
           </p>
           <div className="flex items-center gap-6 text-[10px] font-mono text-secondary uppercase tracking-widest">
-            <Link to="#" className="hover:text-inverted">Политика за поверителност</Link>
-            <Link to="#" className="hover:text-inverted">Общи условия</Link>
+            <Link to="/politika-za-poveritelnost" className="hover:text-inverted transition-colors">Политика за поверителност</Link>
+            <Link to="/obshti-usloviya" className="hover:text-inverted transition-colors">Общи условия</Link>
           </div>
         </div>
       </div>

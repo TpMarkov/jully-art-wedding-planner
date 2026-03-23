@@ -7,6 +7,8 @@ import { About } from './pages/About';
 import { Services } from './pages/Services';
 import { Gallery } from './pages/Gallery';
 import { Contact } from './pages/Contact';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { Terms } from './pages/Terms';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -30,6 +32,8 @@ export default function App() {
           <Route path="/uslugi" element={<Services />} />
           <Route path="/galeriq" element={<Gallery />} />
           <Route path="/kontakti" element={<Contact />} />
+          <Route path="/politika-za-poveritelnost" element={<PrivacyPolicy />} />
+          <Route path="/obshti-usloviya" element={<Terms />} />
         </Routes>
 
         <Footer />
